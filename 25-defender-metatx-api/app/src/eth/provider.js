@@ -2,11 +2,11 @@
 import { ethers } from 'ethers';
 
 const CLOUDFLARE_ENDPOINT = 'https://goerli.prylabs.net';
-const MAIN_ENDPOINT = 'https://rpc.goerli.mudit.blog';
+const MAIN_ENDPOINT =
+  "https://polygon-mumbai.infura.io/v3/853c7c382bc74e69ac0540c9792ceec4";
 const ALTERNATE_ENDPOINT = 'https://rpc.slock.it/goerli';
 const UNSECURE_ENDPOINT = 'http://goerli.blockscout.com';
-const QUICKNODE_ENDPOINT = process.env.REACT_APP_QUICKNODE_URL;
 
 export function createProvider() {  
-  return new ethers.providers.JsonRpcProvider(QUICKNODE_ENDPOINT || MAIN_ENDPOINT, 5);
+  return new ethers.providers.JsonRpcProvider(MAIN_ENDPOINT);
 }

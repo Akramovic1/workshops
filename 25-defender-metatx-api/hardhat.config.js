@@ -17,12 +17,11 @@ module.exports = {
   solidity: "0.8.0",
   networks: {
     local: {
-      url: 'http://localhost:8545'
+      url: "http://localhost:8545",
     },
     goerli: {
-      url: 'https://rpc.goerli.mudit.blog',
+      url: "https://rpc-mumbai.maticvigil.com",
       accounts: [process.env.PRIVATE_KEY],
     },
-
-  }
+  },
 };

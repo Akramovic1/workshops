@@ -1,1 +1,4 @@
-../../deploy.json
+{
+  "MinimalForwarder": "0xA364D76AD64A80514e612Eb64Ba3697F3c253Cca",
+  "Registry": "0xD11164f0A09f44b8CbA700503ef20B11c7e54756"
+}
